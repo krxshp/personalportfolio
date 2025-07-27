@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Enhanced Minecraft End Poem style font using system fonts */
+.minecraft-font {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", monospace !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1.5 !important;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8), 1px 1px 0px rgba(0, 0, 0, 0.6) !important;
+  font-variant: small-caps !important;
+}
+
+/* Legacy font-minecraft class for compatibility */
+.font-minecraft {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", monospace !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1.5 !important;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8), 1px 1px 0px rgba(0, 0, 0, 0.6) !important;
+  font-variant: small-caps !important;
+}
+
+/* Updated background to use the End Poem background */
+.bg-end-poem-background {
+  background-image: url("/images/background/end-poem-background.webp");
+  background-color: #1a1a1a;
+  background-blend-mode: overlay;
+}
+
+/* Custom background - REPLACE WITH YOUR IMAGE */
+.bg-custom-background {
+  background-image: url("/images/background/end-poem-background.webp");
+  /* Fallback to dark background */
+  background-color: #1a1a1a;
+  background-blend-mode: overlay;
+}
+
+/* Fallback Minecraft dirt background */
+.bg-minecraft-dirt {
+  background-image: radial-gradient(circle at 25% 25%, #8b4513 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, #a0522d 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, #654321 1.5px, transparent 1.5px);
+  background-size: 32px 32px, 24px 24px, 16px 16px;
+  background-color: #4a4a4a;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+/* Pixel-perfect borders */
+* {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Additional pixel-style enhancements */
+.pixel-border {
+  border-style: solid;
+  border-image: none;
+}
+
+.minecraft-button {
+  background: linear-gradient(145deg, #666, #333);
+  border: 2px solid #999;
+  box-shadow: inset 1px 1px 0px #aaa, inset -1px -1px 0px #222;
+}
+
+.minecraft-button:hover {
+  background: linear-gradient(145deg, #777, #444);
+}
+
+.minecraft-button:active {
+  box-shadow: inset 1px 1px 0px #222, inset -1px -1px 0px #aaa;
+}
+
+/* Enhanced text effects for End Poem style */
+.end-poem-text {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  font-variant: small-caps;
+}
+
+/* Glowing text effect for special elements */
+.glow-text {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+/* Special styling for the main title */
+.main-title {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8), 2px 2px 0px rgba(0, 0, 0, 0.6), 1px 1px 0px rgba(0, 0, 0, 0.4);
+  font-variant: small-caps;
+}
+
+/* Navigation specific styling */
+.nav-text {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  font-variant: small-caps;
+}
