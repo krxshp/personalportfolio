@@ -38,10 +38,10 @@ export const portfolioData: Section[] = [
       },
       {
         id: "work-2",
-        title: "IT Technical Assistant Intern",
+        title: "Automation Engineer Intern",
 	company: "Housing & Conference Services | McMaster University",
         description:
-          "Improved check in/out for guests in 4000 rooms with automated card scanner using Python, C++, and Scripting. Worked with Bluecat to switch campus network ports to available upon request saving $250k+ in pilot project. Assisted with API calls and 100+ computer setups.",
+          "Automation projects such as: computer setups (100+ devices), MTR rooms, smart drop box (saves 5 mins each for 4000 rooms), and pilot network project (saves department $250k in 1st year). Skills used involve: scripting, C++, Python, Bluecat, and microcontrollers.",
         startDate: "Apr 2025",
         endDate: "Aug 2025",
         type: "large",
@@ -49,7 +49,7 @@ export const portfolioData: Section[] = [
       },
       {
         id: "work-3",
-        title: "IT Infrastructure Analyst Assistant",
+        title: "IT Infrastructure Assistant",
 	company: "Cyber System Solutions",
         description:
           "Provide technical support for 25+ mobile devices, including setup and maintenance through Jira Support. Refurbishing computers and performing repairs/upgrades on a budget. Optimizing cloud infrastructure on Microsoft Azure including a hybrid server, and 10+ virtual machines.",
@@ -195,6 +195,14 @@ export const portfolioData: Section[] = [
         title: "NSS Space Settlement Contest",
         description: "Contributed by developing the transportation technology for our proposed spacecraft. Focused on propulsion concepts, internal transit systems, and feasibility analysis to support long-term human operation in space.",
         link: "https://drive.google.com/file/d/1iM-ncGdJphxDeHTNXckSMo9FHbMWxvuk/view?usp=sharing",
+        type: "large",
+      },
+      {
+        id: "hack-4",
+        title: "MDL Designathon",
+        description: "A hackathon about medical transportation between two cities on a fictional planet. Contributing by creating the ground-effect transportation pod system to use the different atmosphere on the planet. This involves CAD, Renders, and simulation. Inventor Professional was used for all CAD files. Pitched in front of industry professionals.",
+	image: "/assets/hack4.png",
+        link: "https://drive.google.com/drive/folders/1fnp3diqQV3JvU4AayGRDetEITIfS-rIG?usp=sharing",
         type: "large",
       },
     ],
